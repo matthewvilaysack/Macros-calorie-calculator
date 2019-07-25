@@ -36,21 +36,13 @@ const foodInput = document.querySelector('#add-food')
 const carbInput = document.querySelector('#add-carb')
 const proteinInput = document.querySelector('#add-protein')
 const fatInput = document.querySelector('#add-fat')
-const carbButton = document.querySelector('.carb-button')
-const proteinButton = document.querySelector('.protein-button')
-const fatButton = document.querySelector('.fat-button')
 
 const carbOutput = document.querySelector('.carb-output')
 const proteinOutput = document.querySelector('.protein-output')
 const fatOutput = document.querySelector('.fat-output')
 
 const dailySummary = document.querySelector('.calorie-summary')
-const foodItem = document.querySelector('#food-item')
 
-
-//Add the food 
-foodInput.addEventListener(keypress, (e) =>
-    foodItem.innerHTML = e.target.value)
 
 //Global variable conversions
 //Conversion types
@@ -89,28 +81,10 @@ function convertFats() {
 
 
 //Update macros and display function
+//Summary: protein, carbs, fats
 const displayMacros = () => dailySummary.innerHTML = macros.getSummary()
-// carbInput.addEventListener('input', (e) => {
-//     console.log(carb * e.target.value)
-//     carb = carb * e.target.value
-//     return carb
-// })
-
-
-// // Add user input
-// carbButton.addEventListener('click', (carb) => {
-//     output.innerHTML = `Calories: ${carb}`
-// })
-// proteinButton.addEventListener('click', () => {
-//     macro = protein
-//     output.innerHTML = `Calories: ${macro} * 4`
-// })
-// fatButton.addEventListener('click', (calories) => {
-//     output.innerHTML = 'Calories: ${calories}'
-// })
 
 
 
 
 
-//Summary: Protein, carbs, fats, total calories
