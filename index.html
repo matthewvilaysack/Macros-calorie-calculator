@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Macros</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1><strong>Track your macros </strong></h1>
+    <div class="macro">
+      <form id="carb">Carb</form>
+      <input type="number" id="add-carb" name="carb" class="input" />
+      <button class="carb-button" onclick="convertCarbs()">Submit</button>
+      <span class="carb-output">Calories: </span>
+    </div>
+    <div class="macro">
+      <form id="protein">Protein</form>
+      <input type="number" id="add-protein" name="Protein" class="input" />
+      <button class="protein-button" onclick="convertProteins()">Submit</button>
+      <span class="protein-output">Calories: </span>
+    </div>
+    <div class="macro">
+      <form id="fat">Fat</form>
+      <input type="number" id="add-fat" name="Fat" class="input" />
+      <button class="fat-button" onclick="convertFats()">Submit</button>
+      <span class="fat-output">Calories: </span>
+    </div>
+    <div class="calorie-header">
+      <h1 class="calorie-summary"></h1>
+    </div>
+    <div>                
+        <form >
+                <h2> Food:
+                    <span id=food-item>
+
+                    </span> 
+                </h2>
+                <input type="text" id="add-food" name="Fat" class="input" />
+        </form>
+       
+      </div></div>
+    <script src="/main.js"></script>
+  </body>
+</html>
